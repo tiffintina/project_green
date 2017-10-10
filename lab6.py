@@ -10,6 +10,7 @@ db = MySQLdb.connect("127.0.0.1","root","4321","iotfarm")
 cursor = db.cursor()
 def get_status_code(url,path="/"):
 	try:
+                #Just a comment
 		conn = httplib.HTTPConnection(url)
 		conn.request("HEAD",path)
 		return conn.getresponse().status
